@@ -8,5 +8,4 @@ Standards-Version: 3.8.3
 Package: mms-agent
 Architecture: all
 Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Description: Using MMS from 10gen to monitor MongoDB.
