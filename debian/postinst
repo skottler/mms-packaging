@@ -1,0 +1,16 @@
+#!/bin/bash
+
+export SETTINGSDIR="/etc/mms"
+export USRDIR="/usr/share/mms-agent"
+
+if [ ! -e $USRDIR ]; then
+  mkdir -p $USRDIR
+fi
+
+if [ ! -e $SETTINGSDIR ]; then
+  mkdir -p $SETTINGSDIR
+fi
+
+if [ ! -L $USRDIR/settings.py]; then
+  ln -s $SETTINGSDIR/settings.py $USRDIR/settings.py
+fi
